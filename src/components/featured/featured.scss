@@ -1,0 +1,96 @@
+.featured {
+  box-shadow: 2px 4px 16px -6px #000000;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; // Adjust as needed for spacing
+  
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      .title {
+        font-size: 22px; // Larger font size for the title
+        font-weight: bold; // Bolder weight for title
+        color: #555;
+      }
+  
+      svg {
+        // Style for your MoreVertIcon, assuming it uses an SVG element
+        fill: #555;
+      }
+    }
+  
+    .featuredChart {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto; // Center the circular progress bar
+    }
+  
+    .title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #555;
+      text-align: center;
+      margin-top: 10px; // Space after the circular progress bar
+    }
+  
+    .amount {
+      font-size: 30px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+    }
+  
+    .desc {
+      font-size: 12px;
+      color: #999;
+      text-align: center;
+      margin-top: 5px;
+    }
+  
+    .summary {
+      display: flex;
+      justify-content: space-around; // Spread out summary items
+      text-align: center;
+      margin-top: 20px; // Space from the description to summary
+    }
+  
+    .item {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .itemtitle {
+      font-size: 14px;
+      color: #555;
+    }
+  
+    .itemresult {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px; // Larger font for emphasis
+  
+      &.positive {
+        color: #4CAF50;
+      }
+  
+      &.negative {
+        color: #F44336;
+      }
+  
+      svg {
+        // Style for your arrow icons
+        fill: currentColor; // Inherits the color from the parent element
+      }
+  
+      .resultamount {
+        font-weight: bold;
+      }
+    }
+  }
+  
